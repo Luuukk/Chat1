@@ -7,7 +7,6 @@ import 'package:chat/core/services/auth/auth_service.dart';
 import 'package:chat/pages/notification_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../core/services/notification/chat_notification_service.dart';
 
 class ChatPage extends StatelessWidget {
@@ -17,13 +16,13 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cod3r Chat'),
+        title: Text('Uatchat'),
         actions: [
           DropdownButtonHideUnderline(
             child: DropdownButton(
               icon: Icon(
                 Icons.more_vert,
-                color: Colors.black87,
+                color: Colors.white,
               ),
               items: [
                 DropdownMenuItem(
@@ -71,6 +70,7 @@ class ChatPage extends StatelessWidget {
                     '${Provider.of<ChatNotificationService>(context).itemsCount}',
                     style: TextStyle(
                       fontSize: 12,
+                      color: Colors.white,
                     ),
                   ),
                 ),
